@@ -1,9 +1,6 @@
-from televisores.tv import TV
-
-
 class Control:
     def __init__(self) :
-        self._tv = TV(self.getMarca(), self.getEstado())
+        self._tv = None
         
     def turnOn(self):
         self._tv.estado = True
@@ -17,7 +14,7 @@ class Control:
     def canalDown(self):
         self._tv.canalDown()
         
-    def volumenlUp(self):
+    def volumenUp(self):
         self._tv.volumenlUp()
         
     def volumenDown(self):
